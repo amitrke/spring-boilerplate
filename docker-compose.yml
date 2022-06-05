@@ -1,0 +1,9 @@
+version: '3'
+services:
+  springrest-dev:
+    build: .
+    volumes:
+      - .:/root/workspace
+      - vs-server:/root/.vscode-server/extensions
+volumes:
+  vs-server: {}
